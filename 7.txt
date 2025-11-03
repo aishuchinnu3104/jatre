@@ -1,0 +1,70 @@
+Explore Compare It Tool to Compare of two files for Forensic Investigation 
+AIM: 
+The main aim is to comparison of two files for forensics investigation by COMPARE IT tool 
+PROCEDURE: 
+●  COMPARE IT is software that displays 2 files side by side, with colored 
+differences sections to simplify analyzing. You can move changes between files with a 
+single mouse click or keystroke, and of course, you have the ability to edit files directly in 
+comparison window. 
+●  It can make colored printout of differences report, exactly as it‟s on the screen. 
+First 
+of 
+all, 
+install 
+the Compare It from the Link given below. 
+http://www.grigsoft.com/wincmp3.htm it is a 1.7 Mb Software package Click on 
+Compare It Tool, It will show a window to select the files to be compared. 
+●  First, select the first file and click on open and then select the second file and 
+click on open. 
+STEP 1: open the notepad and create a first text file with the extension .txt and savewith a file 
+name 
+Step 2: create a second text file with the extension .txt 
+Step 3: Download the compare it tool install the Compare It from the Link given below. 
+http://www.grigsoft.com/wincmp3.htm it is a 1.7 Mb Software package Click on Compare It Tool, 
+It will show a window to select the files to be compared. 
+Step 4: Upload the first file to the compare it tool 
+Step 5: upload the second file to the compare it tool 
+Step 6: Displays 2 files side by side, with colored differences sections to simplify analyzing. 
+You can move changes between files with a single mouse click or keystroke 
+STEP 7: It also gives you Print report of the difference in the file as follows 
+STEP 8: the comparison result is get display. 
+RESULT: 
+The main aim is to comparison of two files for forensics investigation by COMPARE IT tool 
+is executed successful 
+Steps to Compare Two Files for Forensic Investigation in Kali Linux 
+1. Create Two Sample Files 
+nano file1.txt 
+(Add some text → save with CTRL+O, exit with CTRL+X) 
+nano file2.txt 
+(Add slightly different text → save and exit) 
+2. Compare Files Using diff 
+diff file1.txt file2.txt 
+● This shows line-by-line differences. 
+● Lines starting with < are from file1, and > are from file2. 
+3. Use cmp for Byte-Level Comparison 
+cmp -l file1.txt file2.txt 
+● Prints the exact byte offset and difference between the files. 
+● Useful in forensic investigation to detect tampering at a binary level. 
+4. Use vimdiff for Side-by-Side Colored View 
+vimdiff file1.txt file2.txt 
+● Opens both files in Vim with color highlighting for differences. 
+● Very close to “Compare It” visual style. 
+Navigation: 
+● ]c → Jump to next change 
+● [c → Jump to previous change 
+● :qa! → Quit both files 
+5. Use meld (GUI Tool – Similar to Compare It) 
+If you want a GUI comparison like Compare It: 
+sudo apt update 
+sudo apt install meld -y 
+Then run: 
+meld file1.txt file2.txt 
+● Shows side-by-side differences with colored highlights, very close to Compare It’s 
+Windows tool. 
+● Can also save/print difference reports. 
+6. Generate a Forensic Report 
+You can export results to a file: 
+diff -u file1.txt file2.txt > diff_report.txt 
+● -u gives a unified diff format, commonly used in forensics. 
+● You can attach this report as evidence in investigation. 
+ 
